@@ -11,7 +11,7 @@ import numpy as np
 from scipy import ndimage
 import matplotlib.pyplot as plt
 
-PIXIS_background_filename ='Y:/Data/2017/April/12/PIXIS_12Apr2017_10003.ibw'
+PIXIS_background_filename ='Data/PIXIS_10Apr2017_10003.ibw'
 bgndImage=IgorBin.LoadIBW(PIXIS_background_filename)['Data']
 PIXIS_background1=np.array(bgndImage[:,0:bgndImage.shape[1]/2], dtype=float)
 PIXIS_background2=np.array(bgndImage[:,bgndImage.shape[1]/2:], dtype=float)
